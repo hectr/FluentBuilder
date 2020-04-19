@@ -7,7 +7,20 @@
 
 ## Examples
 
+This is how you use Builder to customize any object:
+
 ```
+Builder(subject: UIView())
+    .frame(CGRect(x: 0, y: 0, width: 100, height: 100))
+    .backgroundColor(.blue)
+    .build()    
+```
+
+And these is how you can use it to create new instances of objects that conform to `Initiable` protocol:  
+
+```
+extension UIView: Initiable {}
+
 UIButton()
     .builder
     .frame(CGRect(x: 0, y: 0, width: 100, height: 100))
