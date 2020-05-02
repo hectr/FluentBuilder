@@ -17,11 +17,12 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(url: "https://github.com/refined-swift/Features.git", from: "0.0.1")
     ],
     targets: [
         .target(
             name: "FluentBuilder",
-            dependencies: []
+            dependencies: ["Features"]
         ),
         .testTarget(
             name: "FluentBuilderTests",

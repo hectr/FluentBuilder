@@ -1,8 +1,6 @@
+import Features
 import FluentBuilder
 import XCTest
-
-extension Int: Initiable {}
-extension String: Initiable {}
 
 final class InitiableTests: XCTestCase {
     final class SomeClass<T: Initiable>: Initiable {
