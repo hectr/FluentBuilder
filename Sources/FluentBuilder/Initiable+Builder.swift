@@ -1,9 +1,5 @@
-import Swift
 import Features
-
-public protocol Initiable {
-    init()
-}
+import Swift
 
 extension Initiable {
     public static var builder: Builder<Self> {
